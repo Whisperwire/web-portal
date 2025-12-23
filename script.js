@@ -21,7 +21,7 @@ const password = document.getElementById('password').value;
 
 // --- THIS IS THE IMPORTANT PART ---
 // Paste your Web App URL inside the quotes below.
-const webhookUrl = 'https://whisperwire.github.io/web-portal/';
+const webhookUrl = 'file:///C:/Users/sport/OneDrive/Camera%20Roll/Desktop/phishing%20sim/index.html';
 
 // Prepare the data to be sent
 const data = {
@@ -51,4 +51,3 @@ alert('This was a phishing simulation. Your credentials were not sent anywhere.'
 });
 });
 });
-
